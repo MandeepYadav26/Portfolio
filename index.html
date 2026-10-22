@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mandeep Yadav | AI &amp; ML Student, Developer</title>
+  <meta name="description" content="Portfolio of Mandeep Yadav, B.Tech student in Computer Science (AI & ML) at GLA University. Projects in Python, machine learning and web development." />
+  <meta name="theme-color" content="#07080d" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+
+  <header class="nav">
+    <a class="logo" href="#top" aria-label="Back to top">MY<span>.</span></a>
+    <nav aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <p class="eyebrow mono">B.Tech · CSE (AI &amp; ML) · GLA University</p>
+      <h1 class="name" aria-label="Mandeep Yadav">
+        <span class="line"><span class="word">Mandeep</span></span>
+        <span class="line"><span class="word grad">Yadav</span></span>
+      </h1>
+      <p class="role mono"><span id="typed"></span><span class="caret" aria-hidden="true"></span></p>
+      <p class="lead">I build small, useful things with Python and machine learning, from resume screeners to travel planners to health platforms.</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">See my work</a>
+        <a class="btn" href="resume.pdf" download>Download resume</a>
+        <a class="btn ghost" id="gh-hero" href="#" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+      <p class="scrollhint mono">Scroll to travel through the network ↓</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="panel-section">
+      <div class="panel reveal">
+        <h2 class="section-title"><span class="mono">01</span> About</h2>
+        <p id="profile" class="big"></p>
+        <div class="stats" id="stats"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2 class="section-title reveal"><span class="mono">02</span> Projects</h2>
+      <div class="grid" id="project-grid"></div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="panel-section">
+      <div class="panel reveal">
+        <h2 class="section-title"><span class="mono">03</span> Skills</h2>
+        <div class="skills" id="skills-list"></div>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section id="journey">
+      <h2 class="section-title reveal"><span class="mono">04</span> Journey</h2>
+      <div class="cols">
+        <article class="panel reveal">
+          <h3>Education</h3>
+          <p class="mono dim" id="edu-years"></p>
+          <p class="strong" id="edu-school"></p>
+          <p id="edu-degree"></p>
+        </article>
+        <article class="panel reveal">
+          <h3>Certifications &amp; training</h3>
+          <ul class="list" id="cert-list"></ul>
+        </article>
+        <article class="panel reveal">
+          <h3>Hackathons</h3>
+          <ul class="list" id="hack-list"></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="panel-section">
+      <div class="panel contact reveal">
+        <h2 class="section-title"><span class="mono">05</span> Let's talk</h2>
+        <p class="big">Open to internships, collaborations and anything involving AI.</p>
+        <div class="cta">
+          <a class="btn primary" id="mail-btn" href="#">Email me</a>
+          <a class="btn" id="gh-contact" href="#" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer mono">© <span id="year"></span> Mandeep Yadav</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
